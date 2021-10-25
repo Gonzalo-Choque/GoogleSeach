@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Google Search Advanced</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+
+  <body>
+    <header>
+      <center>
+        <nav>
+          <li><a href="../CGIgoogle/index.html">Search Google</a></li>
+          <li><a href="../CGIgoogle/imagesGoogle.html">Google Images</a></li>
+          <li><a href="../CGIgoogle/advancedGoogle.html">Search Google Advanced</a></li>
+        </nav>
+      </center>
+    </header>
+
+    <main>
+      <center><img src="https://www.recruitercentral.io/wp-content/uploads/2019/10/Google-Advanced-Search-featuredimage.png"></center>
+
+      <h2>Mostrar páginas que contengan...</h2>
+      
+      <form action="cgi-bin/googleAdvanced.pl" method="GET">
+        <label for='searchAll'>Todas estas palabas:</label>
+        <input type='text' name='as_q'>
+        <br />
+        <label for='searchExact'>Esta palabra o frase exactas:</label>
+        <input type='text' name='as_epq'>
+        <br />
+        <label for='searchNinguna'>Ninguna de estas palabras:</label>
+        <input type='text' name='as_eq'>
+        <br />
+        <input type='submit' value='Busqueda Avanzada'>
+      </form>
+    </main>
+  </body>
+</html>
+
